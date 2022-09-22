@@ -100,7 +100,15 @@ function loadHtml(){
 
         amountProduct.innerHTML = countProduct;
     });
+
+   
 }
  function clearHtml(){
     containerBuyCart.innerHTML = '';
+    
  }
+ 
+ localStorage.setItem("containerBuyCart", JSON.stringify(containerBuyCart));
+ 
+ localStorage.setItem(".products", JSON.stringify(products));
+
